@@ -104,7 +104,9 @@ testBtns.forEach(btn => {
         resetAll();
 
         menuDiv.style.display = "none";
+        moreDiv.style.display = "none";
 
+        moreBtn.style.removeProperty("display");
         headerLogo.style.removeProperty("display");
         headerText.style.removeProperty("display");
 
@@ -197,7 +199,7 @@ function openTestFinal() {
         testStep.style.removeProperty("display");
         headerText.style.display = "none";
         headerTextFinal.style.removeProperty("display");
-        test.style.overflow = "scroll";
+        test.style.overflow = "auto";
         setClock();
     }, 5000);
 }
