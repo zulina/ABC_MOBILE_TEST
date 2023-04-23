@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <button class="menu-btn">
+            <img src="img/menu.png" alt="menu">
+        </button>
+        <img class="header-logo" style="display: none;" src="img/logo.png" alt="logo">
+        <div class="header-text" style="display: none;">тест на определение IQ</div>
+        <div class="header-text-final" style="display: none;">Готово!</div>
+    </div>
+
+    <section class="menu-section" style="display: none;">
+        <button class="close-btn">
+            <img src="img/close-btn.png" alt="close btn">
+        </button>
+        <button class="menu-btns main-page">Главная</button>
+        <button class="menu-btns more-info">Информация о тесте</button>
+        <button class="menu-btns pass-test" style="color: #FFC700;">пройти тест</button>
+    </section>
+
+    <section class="first-section">
+        <div class="white-text">Пройдите точный и быстрый</div>
+        <div class="yellow-text">тест на определение IQ</div>
+        <button class="pass-test">пройти тест</button>
+        <div class="yellow-text-2">и получите рекомендации по развитию своего интеллекта</div>
+        <div class="white-text-2">и улучшению финансового благосостояния и личной жизни</div>
+        <div class="more">
+            <button></button>
+            <div>Подробнее</div>
+        </div>
+    </section>
+
+    <div class="more-div" style="display: none;">
+        <section class="second-section">
+            <img src="img/quotes_open.png" alt="quotes open" style="align-self: flex-start;">
+            <div class="white-text">Профессиональный IQ-тест позволяет не только определить коэффициент вашего интеллекта, 
+                но и выработать список рекомендаций для повышения этого показателя. </div>
+            <img src="img/quotes_close.png" alt="quotes_close" style="align-self: flex-end;">
+        </section>
+        <section class="third-section">
+            <div class="black-text">Также по результатам теста <br>
+                <span class="strong-text">вы получите</span> подробные <br>
+                <span class="strong-text">советы</span> по определению наиболее 
+                перспективной <span class="strong-text">для вашего типа интеллекта сферы деятельности</span>, <br>
+                которая принесет вам скорейший финансовый результат.
+            </div>
+            <img src="img/brain.png" alt="brain">
+            <button class="pass-test">пройти тест</button>
+        </section>
+        <section class="fourth-section">
+            <div class="white-text">Прохождение теста займет <br>у вас не более <span class="strong-text">12 минут</span>, 
+                а его результаты вы сможете <span class="strong-text">использовать всю жизнь</span>. 
+            </div>
+            <div class="black-text">Профессиональная интерпретация и детально проработанные рекомендации позволят вам качественно изменить все аспекты своей жизни: от финансового до любовного.</div>
+            <button class="pass-test">пройти тест</button>
+            <div class="year">© 2019</div>
+        </section>
+    </div>
+
+    <section class="test" style="display: none;">
+        <progress style="display: none;" max="100" value="70"></progress>
+
+        <div class="step-01" style="display: none;">
+            <div class="test-header">Ваш пол:</div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-01-01" type="radio" name="question-01">
+                <label class="test-radio-text" for="answer-01-01">Мужчина</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-01-02" type="radio" name="question-01">
+                <label class="test-radio-text" for="answer-01-02">Женчина</label>
+            </div>
+        </div>
+
+        <div class="step-02" style="display: none;">
+            <div class="test-header">Укажите ваш возраст:</div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-02-01" type="radio" name="question-02">
+                <label class="test-radio-text" for="answer-02-01">До 18</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-02-02" type="radio" name="question-02">
+                <label class="test-radio-text" for="answer-02-02">От 18 до 28</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-02-03" type="radio" name="question-02">
+                <label class="test-radio-text" for="answer-02-03">От 29 до 35</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-02-04" type="radio" name="question-02">
+                <label class="test-radio-text" for="answer-02-04">От 36</label>
+            </div>
+        </div>
+
+        <div class="step-03" style="display: none;">
+            <div class="test-header">Выберите лишнее:</div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-03-01" type="radio" name="question-03">
+                <label class="test-radio-text" for="answer-03-01">Дом</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-03-02" type="radio" name="question-03">
+                <label class="test-radio-text" for="answer-03-02">Шалаш</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-03-03" type="radio" name="question-03">
+                <label class="test-radio-text" for="answer-03-03">Бунгало</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-03-04" type="radio" name="question-03">
+                <label class="test-radio-text" for="answer-03-04">Скамейка</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-03-05" type="radio" name="question-03">
+                <label class="test-radio-text" for="answer-03-05">Хижина</label>
+            </div>
+        </div>
+
+        <div class="step-04" style="display: none;">
+            <div class="test-header">Продолжите числовой ряд:<br>18  20  24  32</div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-04-01" type="radio" name="question-04">
+                <label class="test-radio-text" for="answer-04-01">62</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-04-02" type="radio" name="question-04">
+                <label class="test-radio-text" for="answer-04-02">48</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-04-03" type="radio" name="question-04">
+                <label class="test-radio-text" for="answer-04-03">74</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-04-04" type="radio" name="question-04">
+                <label class="test-radio-text" for="answer-04-04">57</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-04-05" type="radio" name="question-04">
+                <label class="test-radio-text" for="answer-04-05">60</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-04-06" type="radio" name="question-04">
+                <label class="test-radio-text" for="answer-04-06">77</label>
+            </div>
+        </div>
+
+        <div class="step-05" style="display: none;">
+            <div class="test-header">Выберите цвет, который <br>сейчас наиболее Вам <br>приятен:</div>
+            <div class="test-selection-color" style="background: #A8A8A8;"></div>
+            <div class="test-selection-color" style="background: #0000A9;"></div>
+            <div class="test-selection-color" style="background: #00A701;"></div>
+            <div class="test-selection-color" style="background: #F60100;"></div>
+            <div class="test-selection-color" style="background: #FDFF19;"></div>
+            <div class="test-selection-color" style="background: #A95403;"></div>
+            <div class="test-selection-color" style="background: #000000;"></div>
+            <div class="test-selection-color" style="background: #850068;"></div>
+            <div class="test-selection-color" style="background: #46B2AC;"></div>
+        </div>
+
+        <div class="step-06" style="display: none;">
+            <div class="test-header">Отдохните пару секунд, еще <br>раз выберите цвет, который <br>сейчас наиболее Вам приятен:</div>
+            <div class="test-selection-color" style="background: #A8A8A8;"></div>
+            <div class="test-selection-color" style="background: #46B2AC;"></div>
+            <div class="test-selection-color" style="background: #A95403;"></div>
+            <div class="test-selection-color" style="background: #00A701;"></div>
+            <div class="test-selection-color" style="background: #000000;"></div>
+            <div class="test-selection-color" style="background: #F60100;"></div>
+            <div class="test-selection-color" style="background: #850068;"></div>
+            <div class="test-selection-color" style="background: #FDFF19;"></div>
+            <div class="test-selection-color" style="background: #0000A9;"></div>
+        </div>
+
+        <div class="step-07" style="display: none;">
+            <div class="test-header">Какой из городов лишний?</div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-07-01" type="radio" name="question-07">
+                <label class="test-radio-text" for="answer-07-01">Вашингтон</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-07-02" type="radio" name="question-07">
+                <label class="test-radio-text" for="answer-07-02">Лондон</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-07-03" type="radio" name="question-07">
+                <label class="test-radio-text" for="answer-07-03">Париж</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-07-04" type="radio" name="question-07">
+                <label class="test-radio-text" for="answer-07-04">Нью-Йорк</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-07-05" type="radio" name="question-07">
+                <label class="test-radio-text" for="answer-07-05">Москва</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-07-06" type="radio" name="question-07">
+                <label class="test-radio-text" for="answer-07-06">Оттава</label>
+            </div>
+        </div>
+
+        <div class="step-08" style="display: none;">
+            <div class="test-header">Выберите правильную фигуру из четырёх пронумерованных.</div>
+            <img class="test-figure" src="img/figures.png" alt="figures">
+            <div class="test-figure-number">1</div>
+            <div class="test-figure-number">2</div>
+            <div class="test-figure-number">3</div>
+            <div class="test-figure-number">4</div>
+        </div>
+
+        <div class="step-09" style="display: none;">
+            <div class="test-header">Вам привычнее и важнее:</div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-09-01" type="radio" name="question-09">
+                <label class="test-radio-text" for="answer-09-01">Наслаждаться каждой минутой проведенного времени</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-09-02" type="radio" name="question-09">
+                <label class="test-radio-text" for="answer-09-02">Быть устремленными мыслями в будущее</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-09-03" type="radio" name="question-09">
+                <label class="test-radio-text" for="answer-09-03">Учитывать в ежедневной практике прошлый опыт</label>
+            </div>
+        </div>
+
+        <div class="step-10" style="display: none;">
+            <div class="test-header">Какое определение, по-Вашему, больше подходит к этому геометрическому изображению:</div>
+            <img src="img/geometric_img.png" alt="geometric img">
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-10-01" type="radio" name="question-10">
+                <label class="test-radio-text" for="answer-10-01">Оно остроконечное</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-10-02" type="radio" name="question-10">
+                <label class="test-radio-text" for="answer-10-02">Оно устойчиво</label>
+            </div>
+            <div class="test-radio">
+                <input class="test-radio-btn" id="answer-10-03" type="radio" name="question-10">
+                <label class="test-radio-text" for="answer-10-03">Оно находится в состоянии равновесия</label>
+            </div>
+        </div>
+
+        <div class="step-11" style="display: none;">
+            <div class="test-header">Вставьте подходящее число</div>
+            <img class="test-star" src="img/star.png" alt="star">
+            <div class="test-star-number">34</div>
+            <div class="test-star-number">36</div>
+            <div class="test-star-number">53</div>
+            <div class="test-star-number">44</div>
+            <div class="test-star-number">66</div>
+            <div class="test-star-number">42</div>
+        </div>
+
+        <div class="test-loading" style="display: none;">
+            <div class="test-header">Обработка результатов</div>
+            <img class="test-loading-img" src="img/loading.png" alt="loading">
+            <div class="test-loading-text">Определение стиля мышления...........</div>
+        </div>
+
+        <div class="test-final" style="display: none;">
+            <div class="test-text-01">Ваш результат рассчитан: </div>
+            <div class="test-text-02"><span style="text-decoration-line: underline;">Вы относитесь к 3%</span> респондентов, 
+                чей <br>уровень интеллекта более чем на <br>15 пунктов отличается от среднего в <br>большую или меньшую сторону!</div>
+            <div class="test-text-03">Скорее получите свой результат!</div>
+            <div class="test-text-04">В целях защиты персональных данных результат теста, их подробная интерпретация и 
+                рекомендации доступны в виде голосового сообщения по звонку с вашего мобильного телефона</div>
+            <div class="test-text-05">Звоните скорее, запись доступна всего <br>
+                <span id="timer-mm" style="font-size: 20px;">10</span>:<span id="timer-ss" style="font-size: 20px;">00</span> минут</div>
+            <button class="test-call-btn">
+                <img src="img/phone.png" alt="phone">
+                <div>Позвонить и прослушать результат</div>
+            </button>
+            <table class="test-swapi-data" style="display: none;">
+            </table>
+            <div class="test-text-footer">TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU <br>DE DIVERTISMENT. PRIN FOLOSIREA LUI <br>
+                DECLARATI CA AVETI 18 ANI IMPLINITI, </div>
+        </div>
+
+        <button class="next-btn" style="display: none;" disabled>ДАЛЕЕ</button>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
